@@ -1,6 +1,6 @@
 //
 //  PopupBridgeViewController.swift
-//  Paypalize
+//  SDK Tester
 //
 //  Created by Bondi, Andrea on 21/04/2017.
 //  Copyright © 2017 Bondi, Andrea. All rights reserved.

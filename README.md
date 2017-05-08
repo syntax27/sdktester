@@ -1,4 +1,4 @@
-# Paypalize - Demo app for Native XO and Popup Bridge SDK
+# SDK Tester - Demo app for Native XO and Popup Bridge SDK
 
 This app can be used to test how a checkout flow opened inside a WebView (e.g. in hybrid apps) behaves when the WebView is "enhanced" with one of the two SDKs:
 * [NativeXO SDK](https://github.com/paypal/paypalnativecheckout-docs/blob/master/ios.md) for Direct and [PayPal Checkout](https://github.com/paypal/paypal-checkout) implementations
@@ -13,7 +13,7 @@ Before executing the app, you will need to "Trust" the developer team. To do so,
 
 >Settings -> General -> Device Management -> PayPal UK Ltd -> Trust "PayPal UK Ltd" -> Trust
 
-You will now be able to execute Paypalize just by tapping on the app icon from your home screen.
+You will now be able to execute "SDK Tester" just by tapping on the app icon from your home screen.
 
 ## Usage
 
