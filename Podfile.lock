@@ -1,0 +1,25 @@
+PODS:
+  - paypal-nativecheckout (1.1.0)
+  - PopupBridge (0.1.0)
+
+DEPENDENCIES:
+  - paypal-nativecheckout (from `git@github.com:paypal/paypalcheckout-ios.git`, tag `1.1.0`)
+  - PopupBridge
+
+EXTERNAL SOURCES:
+  paypal-nativecheckout:
+    :git: git@github.com:paypal/paypalcheckout-ios.git
+    :tag: 1.1.0
+
+CHECKOUT OPTIONS:
+  paypal-nativecheckout:
+    :git: git@github.com:paypal/paypalcheckout-ios.git
+    :tag: 1.1.0
+
+SPEC CHECKSUMS:
+  paypal-nativecheckout: d0d490ed22e287d60e0027ea137a9c30651d9dfd
+  PopupBridge: 45c7600ecac1cb0006a2382695852e225e45d698
+
+PODFILE CHECKSUM: f77880ba0c38e7c5ec226817236bc3214164a48a
+
+COCOAPODS: 1.2.0

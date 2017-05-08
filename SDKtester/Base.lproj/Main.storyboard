@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9er-LP-9cz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SDK Tester-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SDKtester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qtB-G6-UP8">
+                                <rect key="frame" x="90" y="214" width="195" height="29"/>
+                                <segments>
+                                    <segment title="NativeXO"/>
+                                    <segment title="Popup Bridge"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="3QN-Ql-DE6"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://ppxoab.herokuapp.com/test.html" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RwX-ON-jAm">
+                                <rect key="frame" x="32" y="262" width="301" height="30"/>
+                                <accessibility key="accessibilityConfiguration" hint="asdasd"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="voB-Q6-dvL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0I-Vf-XUN">
+                                <rect key="frame" x="151" y="312" width="72" height="30"/>
+                                <state key="normal" title="Load Page"/>
+                                <connections>
+                                    <action selector="loadPagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Vq-Pm-KxK"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G40-Xa-tA4">
+                                <rect key="frame" x="16" y="67" width="343" height="135"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <string key="text">Select the SDK you want to test, type the URL to load and tap on "Load Page".  - NativeXO for Direct and PayPal Checkout integrations - Popup Bridge for Braintree Web integrations  Sample URL are provided to test.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qtB-G6-UP8" firstAttribute="top" secondItem="G40-Xa-tA4" secondAttribute="bottom" constant="12" id="0gZ-bG-pjc"/>
+                            <constraint firstItem="RwX-ON-jAm" firstAttribute="top" secondItem="qtB-G6-UP8" secondAttribute="bottom" constant="20" id="45F-P2-8ZI"/>
+                            <constraint firstItem="qtB-G6-UP8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="4bA-TX-GVC"/>
+                            <constraint firstItem="A0I-Vf-XUN" firstAttribute="top" secondItem="RwX-ON-jAm" secondAttribute="bottom" constant="20" id="61P-Dl-oaT"/>
+                            <constraint firstItem="qtB-G6-UP8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gf9-Mw-Rw9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G40-Xa-tA4" secondAttribute="trailing" id="Lah-Vq-7tf"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="G40-Xa-tA4" secondAttribute="leading" id="QQF-vc-cRx"/>
+                            <constraint firstItem="A0I-Vf-XUN" firstAttribute="centerX" secondItem="qtB-G6-UP8" secondAttribute="centerX" id="Twh-bb-6lt"/>
+                            <constraint firstItem="RwX-ON-jAm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="anr-uz-3zh"/>
+                            <constraint firstItem="G40-Xa-tA4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="3" id="tyr-54-QYx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RwX-ON-jAm" secondAttribute="trailing" constant="26" id="zWF-vs-FiP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SDK Tester" id="p2y-fV-d4b">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="z8T-c5-nNZ">
+                            <connections>
+                                <action selector="infoPressed:" destination="BYZ-38-t0r" id="s8X-Fl-MKo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sdkSelector" destination="qtB-G6-UP8" id="aJI-9D-BMJ"/>
+                        <outlet property="urlToOpen" destination="RwX-ON-jAm" id="xTH-cf-5kh"/>
+                        <segue destination="0Yj-07-TZc" kind="show" identifier="OpenNativeXO" id="Xr3-jr-Zle"/>
+                        <segue destination="yBb-bI-08m" kind="show" identifier="OpenPopupBridge" id="4qE-UU-neB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.5" y="55.5"/>
+        </scene>
+        <!--Using Popup Bridge-->
+        <scene sceneID="G10-uY-OrS">
+            <objects>
+                <viewController title="Using Popup Bridge" id="yBb-bI-08m" customClass="PopupBridgeViewController" customModule="SDKtester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j1w-CB-7CB"/>
+                        <viewControllerLayoutGuide type="bottom" id="RCT-fK-bF9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UWj-4D-rb5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbh-2S-SHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2304.8000000000002" y="244.22788605697153"/>
+        </scene>
+        <!--Using NativeXO-->
+        <scene sceneID="BD4-gN-6Fh">
+            <objects>
+                <viewController title="Using NativeXO" id="0Yj-07-TZc" customClass="NativeXOUIWebViewController" customModule="SDKtester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0eW-BA-Mds"/>
+                        <viewControllerLayoutGuide type="bottom" id="vJO-ou-ocW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zBX-cS-bNF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRH-UZ-Onv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zRH-UZ-Onv" firstAttribute="top" secondItem="0eW-BA-Mds" secondAttribute="bottom" id="OCP-a7-FFE"/>
+                            <constraint firstItem="zRH-UZ-Onv" firstAttribute="width" secondItem="zBX-cS-bNF" secondAttribute="width" id="b9d-Ib-i2g"/>
+                            <constraint firstItem="zRH-UZ-Onv" firstAttribute="leading" secondItem="zBX-cS-bNF" secondAttribute="leading" id="fNH-Ri-fFz"/>
+                            <constraint firstItem="zRH-UZ-Onv" firstAttribute="height" secondItem="zBX-cS-bNF" secondAttribute="height" id="u8b-BS-0s4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="storeWebView" destination="zRH-UZ-Onv" id="04u-3a-dyL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2e-Jx-LPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2196" y="-429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RjU-Jc-A9E">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9er-LP-9cz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b7O-Zn-bB8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="czZ-9A-rit"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXq-Z2-7NI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="56.221889055472268"/>
+        </scene>
+    </scenes>
+</document>

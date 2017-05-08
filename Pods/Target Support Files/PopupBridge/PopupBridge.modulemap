@@ -1,0 +1,6 @@
+framework module PopupBridge {
+  umbrella header "PopupBridge-umbrella.h"
+
+  export *
+  module * { export * }
+}
