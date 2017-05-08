@@ -7,11 +7,7 @@ This app can be used to test how a checkout flow opened inside a WebView (e.g. i
 ## Installation
 
 You can explore the code of the app to look at a potential implementation of these two SDKs, or you can download the app and execute in your iPhone.
-To do so, just navigate to https://ppxoab.herokuapp.com/sdktester with your mobile browser, tap on the install icon
-
-![Install image](https://github.com/andreabondi/sdktester/blob/master/Images/install-image.png "Install image")
-
-and select "Install".
+To do so, just navigate to https://ppxoab.herokuapp.com/sdktester with your mobile browser, tap on the install icon and select "Install".
 
 Before executing the app, you will need to "Trust" the developer team. To do so, navigate on your iPhone to:
 
@@ -27,5 +23,3 @@ The only steps required to test a live website are:
 2. type the url you want to open
 3. tap on "Load page" to open the page inside a WebView "enhanced" with the selected SDK
 4. test the checkout process. The transaction should complete correctly without any change on both the web page and server side
-
-![App screenshot](https://github.com/andreabondi/sdktester/blob/master/Images/screenshot.png "Screenshot of the app")
