@@ -23,3 +23,5 @@ The only steps required to test a live website are:
 2. type the url you want to open
 3. tap on "Load page" to open the page inside a WebView "enhanced" with the selected SDK
 4. test the checkout process. The transaction should complete correctly without any change on both the web page and server side
+
+![App Screenshot](https://github.com/andreabondi/sdktester/blob/master/Images/sdkTester.png "Screenshot")
