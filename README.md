@@ -1,6 +1,6 @@
 # SDK Tester - Demo app for Native XO and Popup Bridge SDK
 
-This app can be used to test how a checkout flow opened inside a WebView (e.g. in hybrid apps) behaves when the WebView is "enhanced" with one of the two SDKs:
+This app can be used to test how a PayPal checkout flow opened inside a WebView (e.g. in hybrid apps) behaves when the WebView is "enhanced" with one of the two SDKs:
 * [NativeXO SDK](https://github.com/paypal/paypalnativecheckout-docs/blob/master/ios.md) for Direct and [PayPal Checkout](https://github.com/paypal/paypal-checkout) implementations
 * [Popup Bridge](https://github.com/braintree/popup-bridge-ios) SDK for Braintree Web implementations
 
