@@ -6,6 +6,6 @@ target 'SDKtester' do
   use_frameworks!
 
   # Pods for SDKtester
-  pod ‘paypal-nativecheckout’, :git => 'git@github.com:paypal/paypalcheckout-ios.git', :tag => '1.1.0'
+  pod ‘paypal-nativecheckout’, :git => 'git@github.com:paypal/paypalcheckout-ios.git', :tag => '1.2.0'
   pod 'PopupBridge'
 end

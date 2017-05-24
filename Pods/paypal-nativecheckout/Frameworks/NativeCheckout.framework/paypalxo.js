@@ -4,7 +4,7 @@ if (!window.popupBridge) {
             return <%s>;
         },
         open: function(checkoutURL) {
-            var location = window.popupBridge.getReturnUrlPrefix() + '?ppcheckoutURL=' + encodeURIComponent(checkoutURL) +  'checkoutjs=true';
+            var location = window.popupBridge.getReturnUrlPrefix() + '?checkoutjs=true&ppcheckoutURL=' + encodeURIComponent(checkoutURL) ;
             window.location = location;
         },
         end: function(url) {

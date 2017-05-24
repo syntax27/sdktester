@@ -1,6 +1,6 @@
 {
   "name": "paypal-nativecheckout",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "summary": "Static library for Paypal native checkout.",
   "description": "Native checkout paypal SDK. A react-native implementation of checkout experience",
   "homepage": "http://www.paypal.com",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.paypal.com/pvenkatakrishnan/paypalcheckout-ios.git",
-    "tag": "1.1.0"
+    "tag": "1.2.0"
   },
   "vendored_frameworks": "Frameworks/NativeCheckout.framework"
 }
