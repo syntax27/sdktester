@@ -37,6 +37,7 @@ class NativeXOUIWebViewController: UIViewController, UIWebViewDelegate {
         instance = PYPLCheckout.sharedInstance() as! PYPLCheckout
         instance.setWebView(storeWebView)
         
+        storeWebView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         storeWebView.delegate = self
         storeWebView.loadRequest(requestObj)
     }

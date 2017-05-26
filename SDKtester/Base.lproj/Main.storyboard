@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9er-LP-9cz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9er-LP-9cz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -133,7 +133,7 @@
                             <constraint firstItem="zRH-UZ-Onv" firstAttribute="top" secondItem="0eW-BA-Mds" secondAttribute="bottom" id="OCP-a7-FFE"/>
                             <constraint firstItem="zRH-UZ-Onv" firstAttribute="width" secondItem="zBX-cS-bNF" secondAttribute="width" id="b9d-Ib-i2g"/>
                             <constraint firstItem="zRH-UZ-Onv" firstAttribute="leading" secondItem="zBX-cS-bNF" secondAttribute="leading" id="fNH-Ri-fFz"/>
-                            <constraint firstItem="zRH-UZ-Onv" firstAttribute="height" secondItem="zBX-cS-bNF" secondAttribute="height" id="u8b-BS-0s4"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zRH-UZ-Onv" secondAttribute="bottom" constant="-64" id="sxz-eY-pTL"/>
                         </constraints>
                     </view>
                     <connections>
