@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 //import PopupBridge
 
 @UIApplicationMain
@@ -21,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Configure the Popup Bridge SDK with the URL scheme.
         // For NativeXO this is configured in Info.plist
         POPPopupBridge.setReturnURLScheme("popupbridge")
+        
+        // Initialise Firebase for basic analytics
+        FirebaseApp.configure()
         
         return true
     }

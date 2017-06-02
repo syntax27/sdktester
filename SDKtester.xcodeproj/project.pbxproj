@@ -15,6 +15,7 @@
 		BE8E86011EA8F4AE0011EFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE8E86001EA8F4AE0011EFC1 /* Assets.xcassets */; };
 		BE8E86041EA8F4AE0011EFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8E86021EA8F4AE0011EFC1 /* LaunchScreen.storyboard */; };
 		BE8E86151EA902E80011EFC1 /* NativeXOUIWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E86141EA902E80011EFC1 /* NativeXOUIWebViewController.swift */; };
+		BEDFF0311EE1BF26009E7C1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEDFF0301EE1BF26009E7C1D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,7 @@
 		BE8E86051EA8F4AE0011EFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE8E86111EA8FB650011EFC1 /* PYPLCheckoutBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYPLCheckoutBridge.h; sourceTree = "<group>"; };
 		BE8E86141EA902E80011EFC1 /* NativeXOUIWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeXOUIWebViewController.swift; sourceTree = "<group>"; };
+		BEDFF0301EE1BF26009E7C1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				BE8E86051EA8F4AE0011EFC1 /* Info.plist */,
 				BE74198F1EAA0612007EB0FF /* PopupBridgeViewController.swift */,
 				BE8E86141EA902E80011EFC1 /* NativeXOUIWebViewController.swift */,
+				BEDFF0301EE1BF26009E7C1D /* GoogleService-Info.plist */,
 			);
 			path = SDKtester;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8E86041EA8F4AE0011EFC1 /* LaunchScreen.storyboard in Resources */,
+				BEDFF0311EE1BF26009E7C1D /* GoogleService-Info.plist in Resources */,
 				BE8E86011EA8F4AE0011EFC1 /* Assets.xcassets in Resources */,
 				BE8E85FF1EA8F4AE0011EFC1 /* Main.storyboard in Resources */,
 			);

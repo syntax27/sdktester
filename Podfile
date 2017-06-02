@@ -8,4 +8,7 @@ target 'SDKtester' do
   # Pods for SDKtester
   pod ‘paypal-nativecheckout’, :git => 'git@github.com:paypal/paypalcheckout-ios.git', :tag => '1.2.0'
   pod 'PopupBridge'
+
+  # Pod for Firebase
+  pod 'Firebase/Core'
 end

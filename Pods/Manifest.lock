@@ -1,8 +1,23 @@
 PODS:
+  - Firebase/Core (4.0.0):
+    - FirebaseAnalytics (= 4.0.0)
+    - FirebaseCore (= 4.0.0)
+  - FirebaseAnalytics (4.0.0):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (4.0.0):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (2.0.0):
+    - FirebaseCore (~> 4.0)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
   - paypal-nativecheckout (1.2.0)
   - PopupBridge (0.1.0)
 
 DEPENDENCIES:
+  - Firebase/Core
   - paypal-nativecheckout (from `git@github.com:paypal/paypalcheckout-ios.git`, tag `1.2.0`)
   - PopupBridge
 
@@ -17,9 +32,14 @@ CHECKOUT OPTIONS:
     :tag: 1.2.0
 
 SPEC CHECKSUMS:
+  Firebase: 284eea779b73fdff309791817da7c68bff8dd572
+  FirebaseAnalytics: 6f08e746f7d66f5452931bc2e822b5df9c66b64a
+  FirebaseCore: 85ad466044c2f013cdb167f85d426d15b128114a
+  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   paypal-nativecheckout: 57a9d5ed6c46c697fa01dfb11d90ae7fa71e447a
   PopupBridge: 45c7600ecac1cb0006a2382695852e225e45d698
 
-PODFILE CHECKSUM: 5f6314b1d7cc16b357b9f0cb4027d4e4a1474c4e
+PODFILE CHECKSUM: b0bf637e446ddbe4602f3c7fada68a82b01d156a
 
 COCOAPODS: 1.2.1

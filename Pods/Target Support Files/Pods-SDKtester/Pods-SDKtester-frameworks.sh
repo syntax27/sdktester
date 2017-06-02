@@ -89,10 +89,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/GoogleToolboxForMac/GoogleToolboxForMac.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PopupBridge/PopupBridge.framework"
   install_framework "${PODS_ROOT}/paypal-nativecheckout/Frameworks/NativeCheckout.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/GoogleToolboxForMac/GoogleToolboxForMac.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PopupBridge/PopupBridge.framework"
   install_framework "${PODS_ROOT}/paypal-nativecheckout/Frameworks/NativeCheckout.framework"
 fi
