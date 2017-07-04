@@ -6,14 +6,7 @@ This app can be used to test how a PayPal checkout flow opened inside a WebView 
 
 ## Installation
 
-You can explore the code of the app to look at a potential implementation of these two SDKs, or you can download the app and execute in your iPhone.
-To do so, just navigate to https://ppxoab.herokuapp.com/sdktester with your mobile browser, tap on the install icon and select "Install".
-
-Before executing the app, you will need to "Trust" the developer team. To do so, navigate on your iPhone to:
-
->Settings -> General -> Device Management -> PayPal UK Ltd -> Trust "PayPal UK Ltd" -> Trust
-
-You will now be able to execute "SDK Tester" just by tapping on the app icon from your home screen.
+You can explore the code of the app to look at a potential implementation of these two SDKs. To install the app, you need xCode to compile it.
 
 ## Usage
 
