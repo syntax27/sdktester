@@ -6,7 +6,7 @@ This app can be used to test how a PayPal checkout flow opened inside a WebView 
 
 ## Installation
 
-You can explore the code of the app to look at a potential implementation of these two SDKs. To install the app, you need xCode to compile it.
+You can explore the code of the app to look at a potential implementation of these two SDKs. To install the app, you need Xcode to compile it.
 
 ## Usage
 
