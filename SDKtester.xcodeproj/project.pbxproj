@@ -390,7 +390,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/paypal-nativecheckout/Frameworks/NativeCheckout.framework/Headers",
+					"$(PROJECT_DIR)/Pods/PayPal.Checkout/pod/lib/NativeCheckout.framework/Headers",
 					"$(PROJECT_DIR)/Pods/PopupBridge/PopupBridge/Classes",
 				);
 				INFOPLIST_FILE = SDKtester/Info.plist;
@@ -415,7 +415,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/paypal-nativecheckout/Frameworks/NativeCheckout.framework/Headers",
+					"$(PROJECT_DIR)/Pods/PayPal.Checkout/pod/lib/NativeCheckout.framework/Headers",
 					"$(PROJECT_DIR)/Pods/PopupBridge/PopupBridge/Classes",
 				);
 				INFOPLIST_FILE = SDKtester/Info.plist;
