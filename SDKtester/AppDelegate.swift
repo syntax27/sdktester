@@ -35,8 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // NativeXO SDK took control
         if(url.scheme == "sdktester"){
             let instance:PYPLCheckout = PYPLCheckout.sharedInstance() as! PYPLCheckout;
-            let wasHandled:Bool = instance.openURL(app, open: url as URL, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String, annotation: options[UIApplicationOpenURLOptionsKey.annotation]);
-            return wasHandled
+            return instance.handleReturn(fromPaypal: url);
         }
             
         // Second option is with URL scheme "popupbridge", which means that

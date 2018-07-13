@@ -35,19 +35,11 @@ class NativeXOUIWebViewController: UIViewController, UIWebViewDelegate {
         // Retrieve the shared instance of NativeXO and setup the right WebView.
         // NativeXO supports UIWebView
         instance = PYPLCheckout.sharedInstance() as! PYPLCheckout
-        instance.setWebView(storeWebView)
+        instance.webBrowserOnlyMode = true
+        instance.interceptWebView(storeWebView)
         
         storeWebView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-        storeWebView.delegate = self
         storeWebView.loadRequest(requestObj)
-    }
-    
-    // Since this class is also the UIWebView delegate, every load URL request will
-    // trigger this method.
-    // The NativeXO handleIfPPCheckout method will detect if it's a PayPal Checkout URL
-    // and take ownership if it's true.
-    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        return instance.handleIfPPCheckout(request as URLRequest!);
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

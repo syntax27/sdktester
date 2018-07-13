@@ -51,9 +51,11 @@
 		<true/>
 	</dict>
 	<key>Paypal_Client_Id</key>
-	<string></string>
-	<key>Paypal_Deep_Link</key>
-	<string>sdktester://paypal/authorize</string>
+	<string>AT-bQMnyFjrCs5VruiMCb_7Je2NgKzsDE9ugl-M2Akg3t-mWeCDgV6sAiTeYGwkOp8N6WMTfaXKbJ8P3</string>
+	<key>Paypal_Universal_Link</key>
+	<string>https://ppxoab.herokuapp.com/nativeXOdev/</string>
+	<key>Paypal_Url_Scheme</key>
+	<string>sdktester</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
