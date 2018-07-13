@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2B8B969485BDF4E32B810BD678540CD9'
-               BlueprintName = 'PopupBridge'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'PopupBridge.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F491E941336CFE8C7F1AB1500F7F510F"
+               BlueprintName = "PopupBridge"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "PopupBridge.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
