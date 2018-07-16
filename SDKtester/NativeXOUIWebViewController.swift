@@ -11,14 +11,14 @@ import Foundation
 import UIKit
 import WebKit
 
-class NativeXOUIWebViewController: UIViewController, UIWebViewDelegate {
+class NativeXOUIWebViewController: UIViewController {
     
     var storeUrl: String = ""
     var nativeSheet: Bool = true
     
     var instance: PYPLCheckout!
     
-    @IBOutlet weak var storeWebView: UIWebView!
+    @IBOutlet weak var storeWebView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,7 @@ class NativeXOUIWebViewController: UIViewController, UIWebViewDelegate {
         instance.interceptWebView(storeWebView)
         
         storeWebView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-        storeWebView.loadRequest(requestObj)
+        storeWebView.load(requestObj)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
