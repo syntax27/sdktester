@@ -55,6 +55,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func loadPagePressed(_ sender: Any) {
         if(sdkSelector.selectedSegmentIndex == 0){
+            if(urlToOpen.text != "https://ppxoab.herokuapp.com/cart/index.html" && nativeSwitch.isOn){
+                let alert = UIAlertController(title: "SDK Tester", message: "The native experience is restricted to the pre-set test environment. \n\n If you want to test another url please disable the native payment sheet.", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
             performSegue(withIdentifier: "OpenNativeXO", sender: Any?.self)
         } else {
             performSegue(withIdentifier: "OpenPopupBridge", sender: Any?.self)
