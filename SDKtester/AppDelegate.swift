@@ -35,8 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // NativeXO SDK took control
         if(url.scheme == "sdktester"){
             let instance:PYPLCheckout = PYPLCheckout.sharedInstance() as! PYPLCheckout;
-            let wasHandled:Bool = instance.openURL(app, open: url as URL, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String, annotation: options[UIApplicationOpenURLOptionsKey.annotation]);
-            return wasHandled
+            return instance.handleReturn(fromPaypal: url);
         }
             
         // Second option is with URL scheme "popupbridge", which means that
@@ -48,6 +47,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         else {
             return false
         }
+    }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        let instance:PYPLCheckout = PYPLCheckout.sharedInstance() as! PYPLCheckout
+        return instance.application(application, continue: userActivity, restorationHandler: restorationHandler)
+    }
+    
+    func application (_ application: UIApplication, didChangeStatusBarFrame oldStatusBarFrame: CGRect) {
+        let instance:PYPLCheckout = PYPLCheckout.sharedInstance() as! PYPLCheckout
+        instance.application(application, didChangeStatusBarFrame: oldStatusBarFrame)
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

@@ -11,15 +11,16 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
 
     // Default test URLs
-    let nativeXoUrl = "https://ppxoab.herokuapp.com/test.html"
+    let nativeXoUrl = "https://ppxoab.herokuapp.com/cart/index.html"
     let btUrl = "https://btnodeab.herokuapp.com/test.html"
     
     // Default values for UI elements
     var selectedSdk = 0
-    var url = "https://ppxoab.herokuapp.com/test.html"
+    var url = "https://ppxoab.herokuapp.com/cart/index.html"
     
     @IBOutlet weak var sdkSelector: UISegmentedControl!
     @IBOutlet weak var urlToOpen: UITextField!
+    @IBOutlet weak var nativeSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,13 +46,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         if (sender.selectedSegmentIndex == 0) {
             urlToOpen.text = nativeXoUrl
+            nativeSwitch.isEnabled = true
         } else {
             urlToOpen.text = btUrl
+            nativeSwitch.isEnabled = false
         }
     }
     
     @IBAction func loadPagePressed(_ sender: Any) {
         if(sdkSelector.selectedSegmentIndex == 0){
+            if(urlToOpen.text != "https://ppxoab.herokuapp.com/cart/index.html" && nativeSwitch.isOn){
+                let alert = UIAlertController(title: "SDK Tester", message: "The native experience is restricted to the pre-set test environment. \n\n If you want to test another url please disable the native payment sheet.", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
             performSegue(withIdentifier: "OpenNativeXO", sender: Any?.self)
         } else {
             performSegue(withIdentifier: "OpenPopupBridge", sender: Any?.self)
@@ -61,8 +69,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Pass the URL value to the subsequent VC
         let url = urlToOpen.text
+        let nativeSheet = nativeSwitch.isOn
         if let destinationVC = segue.destination as? NativeXOUIWebViewController {
             destinationVC.storeUrl = url!
+            destinationVC.nativeSheet = nativeSheet
         } else if let destinationVC = segue.destination as? PopupBridgeViewController {
             destinationVC.storeUrl = url!
         }
@@ -70,7 +80,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // Display info popup
     @IBAction func infoPressed(_ sender: UIBarButtonItem) {
-        let alert = UIAlertController(title: "SDK Tester", message: "Tester app for NativeXO and PopupBridge SDK. \n\n ©2017 Andrea Bondi\nandrea@andreabondi.it \n\n THIS APP IS PROVIDED AS IS, see MIT license", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "SDK Tester", message: "Tester app for NativeXO and PopupBridge SDK. \n\n ©2018 Andrea Bondi\nandrea@andreabondi.it \n\n THIS APP IS PROVIDED AS IS, see MIT license", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
 
