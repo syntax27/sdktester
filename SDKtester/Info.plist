@@ -51,9 +51,9 @@
 		<true/>
 	</dict>
 	<key>Paypal_Client_Id</key>
-	<string>AT-bQMnyFjrCs5VruiMCb_7Je2NgKzsDE9ugl-M2Akg3t-mWeCDgV6sAiTeYGwkOp8N6WMTfaXKbJ8P3</string>
+	<string>Afqildx0cKbk0QwvlWsDwjqahzRJNABsIVnLFbR1ANqAIB7Hp1pgLHmQBhMNK0zI_oG0G5iTDUyIYgcb</string>
 	<key>Paypal_Universal_Link</key>
-	<string>https://ppxoab.herokuapp.com/nativeXOdev/</string>
+	<string>https://ppxoab.herokuapp.com/sdktesteruniversal/</string>
 	<key>Paypal_Url_Scheme</key>
 	<string>sdktester</string>
 	<key>UILaunchStoryboardName</key>

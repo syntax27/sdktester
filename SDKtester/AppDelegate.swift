@@ -49,6 +49,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        let instance:PYPLCheckout = PYPLCheckout.sharedInstance() as! PYPLCheckout
+        return instance.application(application, continue: userActivity, restorationHandler: restorationHandler)
+    }
+    
+    func application (_ application: UIApplication, didChangeStatusBarFrame oldStatusBarFrame: CGRect) {
+        let instance:PYPLCheckout = PYPLCheckout.sharedInstance() as! PYPLCheckout
+        instance.application(application, didChangeStatusBarFrame: oldStatusBarFrame)
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

@@ -11,12 +11,12 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
 
     // Default test URLs
-    let nativeXoUrl = "https://ppxoab.herokuapp.com/test.html"
+    let nativeXoUrl = "https://ppxoab.herokuapp.com/cart/index.html"
     let btUrl = "https://btnodeab.herokuapp.com/test.html"
     
     // Default values for UI elements
     var selectedSdk = 0
-    var url = "https://ppxoab.herokuapp.com/test.html"
+    var url = "https://ppxoab.herokuapp.com/cart/index.html"
     
     @IBOutlet weak var sdkSelector: UISegmentedControl!
     @IBOutlet weak var urlToOpen: UITextField!
