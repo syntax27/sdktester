@@ -36,7 +36,9 @@ class NativeXOUIWebViewController: UIViewController, UIWebViewDelegate {
         // Retrieve the shared instance of NativeXO and setup the right WebView.
         // NativeXO supports UIWebView
         instance = PYPLCheckout.sharedInstance() as! PYPLCheckout
-        if(!nativeSheet) {
+        if(nativeSheet) {
+            instance.webBrowserOnlyMode = false
+        } else {
             instance.webBrowserOnlyMode = true
         }
         instance.interceptWebView(storeWebView)
