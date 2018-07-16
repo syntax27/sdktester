@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var sdkSelector: UISegmentedControl!
     @IBOutlet weak var urlToOpen: UITextField!
+    @IBOutlet weak var nativeSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +46,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         if (sender.selectedSegmentIndex == 0) {
             urlToOpen.text = nativeXoUrl
+            nativeSwitch.isEnabled = true
         } else {
             urlToOpen.text = btUrl
+            nativeSwitch.isEnabled = false
         }
     }
     
@@ -61,8 +64,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Pass the URL value to the subsequent VC
         let url = urlToOpen.text
+        let nativeSheet = nativeSwitch.isOn
         if let destinationVC = segue.destination as? NativeXOUIWebViewController {
             destinationVC.storeUrl = url!
+            destinationVC.nativeSheet = nativeSheet
         } else if let destinationVC = segue.destination as? PopupBridgeViewController {
             destinationVC.storeUrl = url!
         }
@@ -70,7 +75,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // Display info popup
     @IBAction func infoPressed(_ sender: UIBarButtonItem) {
-        let alert = UIAlertController(title: "SDK Tester", message: "Tester app for NativeXO and PopupBridge SDK. \n\n ©2017 Andrea Bondi\nandrea@andreabondi.it \n\n THIS APP IS PROVIDED AS IS, see MIT license", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "SDK Tester", message: "Tester app for NativeXO and PopupBridge SDK. \n\n ©2018 Andrea Bondi\nandrea@andreabondi.it \n\n THIS APP IS PROVIDED AS IS, see MIT license", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
 

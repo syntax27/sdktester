@@ -14,6 +14,7 @@ import WebKit
 class NativeXOUIWebViewController: UIViewController, UIWebViewDelegate {
     
     var storeUrl: String = ""
+    var nativeSheet: Bool = true
     
     var instance: PYPLCheckout!
     
@@ -35,7 +36,9 @@ class NativeXOUIWebViewController: UIViewController, UIWebViewDelegate {
         // Retrieve the shared instance of NativeXO and setup the right WebView.
         // NativeXO supports UIWebView
         instance = PYPLCheckout.sharedInstance() as! PYPLCheckout
-        //instance.webBrowserOnlyMode = true
+        if(!nativeSheet) {
+            instance.webBrowserOnlyMode = true
+        }
         instance.interceptWebView(storeWebView)
         
         storeWebView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
