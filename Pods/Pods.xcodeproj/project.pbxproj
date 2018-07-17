@@ -14,7 +14,6 @@
 		0ABF3961C14F4E2D012936D83C5C724A /* FIRErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1BE173054A1C7D4CD8869A1D9431F7 /* FIRErrors.m */; };
 		0C366F7CF7F7BED0AC76E1312F7E86C8 /* SyrAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E459B62472C62AFAEA6BC1E5286F1C9 /* SyrAnimator.m */; };
 		0D51CEE1F51BDF39F85DEE1D464802C1 /* SyrRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F9BB79497B23FD5665D4E340FDF770 /* SyrRootView.m */; };
-		0D85F13C779167622E521C6871A36599 /* POPPopupBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9451A71D7925ED684AE859D8C7FF87 /* POPPopupBridge.m */; };
 		10D6FA442780215E2E15B8D4D6A00A37 /* SyrNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 93DDC247592154AD4C58E126BF35BD08 /* SyrNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1244D02CC87ED5B7D498DA2BB281F493 /* SyrHapticHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9784EE1D697CA87187487B03BCECF2 /* SyrHapticHelper.m */; };
 		165C3358CA9B3DCE248029CF6BEE4870 /* img_fi_capitalone_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6906A9111ED06DCF445247CA805DAF /* img_fi_capitalone_small.png */; };
@@ -29,6 +28,7 @@
 		235E8743D168C0841948A349D3F67B66 /* SyrAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8621664EAF695688F01CA23CABB8C343 /* SyrAnimationDelegate.m */; };
 		29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 07AC746C0AD5569C10D85683A374E566 /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BD3B335142128643465AC03C12578B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD0FE18EE1DBDA48957AE85CD8CD387 /* UIKit.framework */; };
+		2F973F0366320B54A0270AC503427CD0 /* PopupBridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE297025C154DF23E9C2944E399C2B3 /* PopupBridge-dummy.m */; };
 		2FAFE7A2E5F7C163B3F9A55000557F72 /* FIRNetworkURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 7130601581F8CD89F5C1F13C831752E1 /* FIRNetworkURLSession.m */; };
 		31420CCA364D5425BC25A8AEED83F6CB /* icon_chevron_forward_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = AE48EFDACFC33AA3D00C0AC95EC8BE3E /* icon_chevron_forward_blue.png */; };
 		31BD9D3C823826CC7F19D19704D4EDDA /* img_fi_pnc_small.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8D59CB9EE9B0E28A53A19D47BDA47F /* img_fi_pnc_small.png */; };
@@ -41,7 +41,6 @@
 		3883B72198499726B04F847CA9D1F627 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B5CE471FF1460BBDA4EF81D9BAD01D6 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD551B0D32AD920EC12AD4FD8C742C5 /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		39AA59DE64BB45C5E486EE548299C023 /* SyrStyler.h in Headers */ = {isa = PBXBuildFile; fileRef = FA61236491A7ABCAB01A571650968F09 /* SyrStyler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39F09C7F253A1B52800CF5C3ADBEE4B2 /* POPWeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E3BD2FA4782A5C2DC453DB23B27BC /* POPWeakScriptMessageDelegate.m */; };
 		3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E70599B5FDF9CE17803995D1F548A02 /* pb_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc -fno-objc-arc"; }; };
 		3B7CB5FED0B03C05B42973C8E1A35EB7 /* syr.core-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE31165DBDB8CB6C4085001C835F4E7 /* syr.core-dummy.m */; };
 		3BD66D6656842D316A18D8F595045BF0 /* FIRConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FC60169748901EA8F9A29878720807 /* FIRConfiguration.m */; };
@@ -76,7 +75,7 @@
 		5B46B9D656F626D2AB2033FE60A5FDF3 /* FIRNetworkLoggerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1623F83E63169420A2726A18B421F318 /* FIRNetworkLoggerProtocol.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5BB5B5D3282DD4E949A16EC75F113E3F /* Pods-SDKtester-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2918301D95D9E5E8397565490226C0C8 /* Pods-SDKtester-dummy.m */; };
 		5D05C0E602E40FC9D8FBC20C28F1A744 /* SyrSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = E12EDF75FDC31982B961E4958584CB9F /* SyrSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F247FEE7F6B1BA280AE203F42369E5D /* POPWeakScriptMessageDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C8432A93BBDE9920C3BE771149C7161D /* POPWeakScriptMessageDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F247FEE7F6B1BA280AE203F42369E5D /* POPWeakScriptMessageDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DBD9D8358DBDF1823951E902D62A6CE /* POPWeakScriptMessageDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62A5961D205403DD29F93C58967B0E98 /* SyrBundleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 284BE9410AE272B54BE9FE0CA491A8B2 /* SyrBundleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		648F8311E32C3589B4BF1D62BD3189C9 /* checkout_logo_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C912073EFA664986B7EA84DE98DE059 /* checkout_logo_large.png */; };
 		64E08F21A8E22882B80278AB565B026D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C791114CC27FA630ACE09697C6F0945 /* Foundation.framework */; };
@@ -104,7 +103,6 @@
 		8A6088156884598F6CC77CCCB04A7FE1 /* SyrAnimatedText.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA3B3E5D289B6DDEF898DDDA4A72B26 /* SyrAnimatedText.m */; };
 		8B1E58E7CE326AD40E35F0D87A6C0D9C /* SyrCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 46FBDD5AAF1B959912E40D6D617957A3 /* SyrCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B595D1E703A57549BB98A1AF0F257DA /* FIRAppEnvironmentUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A854A47B55F03F3BECAEFAD848573F /* FIRAppEnvironmentUtil.m */; };
-		8E5916441A27BA4F2E528A4732DC13EE /* PopupBridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D89880DABDFF3452613B5C7E554EF67 /* PopupBridge-dummy.m */; };
 		8F0FFA270E768BC335C0AB4DDC229B9A /* FIRAnalyticsConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D74B7F9B5E089392D89C3B91FEB9918 /* FIRAnalyticsConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F5D3991D94CE98826B62B1D80EEA49A /* SyrButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D477ADBE0D32DE293B0C2D77A85BB359 /* SyrButton.m */; };
 		919B84BDC30E85AC9A647D99ACDABEC4 /* icon_close_cross_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 99EA2CD942733494A9FB42D6B6500A3A /* icon_close_cross_white.png */; };
@@ -113,6 +111,7 @@
 		960FA075A4EF8B3E196888DF238A9812 /* SyrHapticHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A720FBECB7BF51FFB374928C6B3F4E7B /* SyrHapticHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9635F47BC7677490DD4ACF6F136E5C0E /* img_fi_discover_small.png in Resources */ = {isa = PBXBuildFile; fileRef = E00A9AD91F0F0F0B32D2D8D6DB3AEE56 /* img_fi_discover_small.png */; };
 		96DEAE55200D1CACAD32FD4E9F6FC814 /* SyrScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 393145382C53CC376AEC0DF9F4FC8F2F /* SyrScrollView.m */; };
+		984457DBE0343FF23CD3A02690B2031C /* POPPopUpBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F7181C93743DB7A72DCAC2BC676B0287 /* POPPopUpBridge.m */; };
 		9B3BB0BB63055112AE0B41146D80AA04 /* FIRNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA680EEA5D716592A44E106D881B64A /* FIRNetwork.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A1910C42D44099DC241B389D9BCC26C1 /* FIRConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = FA67C1F9665043D10EE4CB8A1703AEB6 /* FIRConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1C22CEEC045B720CB5310EBCABA42FB /* SyrAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD981F05A774DC6F40E6E443AFAA134 /* SyrAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -129,10 +128,10 @@
 		B6C4541175E560B2D1BE43601943C729 /* SyrInfoBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DACF1F173036C0FEAC6B50F1ACF8D36 /* SyrInfoBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7762CCB1BF67C5F8451AF095A678D42 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DBAE5A29CC14C5DC9129A7EF44F89FD /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7CC8C79476111C32BBC76516165306A /* nativexo-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F46D4F388BA16EC56F931AEF7858BF7B /* nativexo-manifest.json */; };
-		B824C7473ADE64D2F888E53CB997A471 /* PopupBridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F963289C254E9611F8241D85F8030EFF /* PopupBridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B824C7473ADE64D2F888E53CB997A471 /* PopupBridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80FAF461A0321749CCD8B011E70B9A6B /* PopupBridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC9C186F3078B612C0B0AF31632A8D44 /* SyrCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F35E433FAA6AF8E8FCC6FA973071757 /* SyrCore.m */; };
 		BCF7747045D7586507F4CE0F787A5056 /* icon_handshake_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 3233514BC51B7902403BC8FACACC0105 /* icon_handshake_black.png */; };
-		BD267F2D8D064AD4F78B9817127B444A /* POPPopupBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = E848F9CF9EE0A27F638DF0FEC353302D /* POPPopupBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD267F2D8D064AD4F78B9817127B444A /* POPPopupBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 736D3916C5A2551E7C4CECD3A2643857 /* POPPopupBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFA6AF79D0DB705E09283A7B48E9757A /* img_fi_fifth_third_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F1066112B930BBBB419157E51A6DE9 /* img_fi_fifth_third_small.png */; };
 		C04AADE8E4A470C4074FCA8EE90CF4C2 /* FIROptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3431FDF9F4083136AC9ECB88CB973565 /* FIROptions.m */; };
 		C14BCC00F75331E60F28F82F7D3F9EA9 /* FIRVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 671837EB7920E63D33F6E123D36C8754 /* FIRVersion.m */; };
@@ -153,6 +152,7 @@
 		DA625BE200A2E8AD3A51CB233D33B598 /* FIRNetworkURLSession.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE5876CE9A0C4B488FF9E278022159A /* FIRNetworkURLSession.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		DA7452CF7FB69698A73DD19CC863D03C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF8B0D242C2841BED36DA714DE79972 /* SystemConfiguration.framework */; };
 		DAA4931487B5E49D433E6DF80E1CC249 /* SyrHeightWidthAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB35741D8D737172440E6393F693E3C /* SyrHeightWidthAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCFB2951BE783C494B9AAFCBA204C30A /* POPWeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A20685539B2016DF226B5422FE22ACE /* POPWeakScriptMessageDelegate.m */; };
 		DFB4D54E24E9B7EBD4A66946569162E6 /* FIRNetworkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBF5C5EF1AACC890C8B5C9E5270062E /* FIRNetworkConstants.m */; };
 		E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3552397A51159A4E0F36498C774C2A4C /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1959EA54A2CBA1858855C530C844337 /* FIRNetworkConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 543B3346C6359DAE614CE1042C8AAE2A /* FIRNetworkConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -241,7 +241,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		049578DA66FFDF2D5D53AFD8421B6A7B /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049578DA66FFDF2D5D53AFD8421B6A7B /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B03645E74A1B019ACE807F782047BF /* img_fi_ppbalance_small.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img_fi_ppbalance_small.png; path = pod/assets/PYPLCheckout/img_fi_ppbalance_small.imageset/img_fi_ppbalance_small.png; sourceTree = "<group>"; };
 		04B8AE6999B8F5B22D40987637EAE25A /* SyrImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrImage.h; path = ios/SyrNative/SyrNative/SyrImage.h; sourceTree = "<group>"; };
 		057980D32603F1C71EF3E0B777366C10 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
@@ -254,8 +254,9 @@
 		0B9784EE1D697CA87187487B03BCECF2 /* SyrHapticHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrHapticHelper.m; path = ios/SyrNative/SyrNative/SyrHapticHelper.m; sourceTree = "<group>"; };
 		0C2D69A7D0CD0FA2753747288EB5A0A2 /* SyrEventHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrEventHandler.m; path = ios/SyrNative/SyrNative/SyrEventHandler.m; sourceTree = "<group>"; };
 		0DA15EF100DDED8D04FF2A73E705E151 /* SyrComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrComponent.m; path = ios/SyrNative/SyrNative/SyrComponent.m; sourceTree = "<group>"; };
+		0DBD9D8358DBDF1823951E902D62A6CE /* POPWeakScriptMessageDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPWeakScriptMessageDelegate.h; path = PopupBridge/Classes/POPWeakScriptMessageDelegate.h; sourceTree = "<group>"; };
 		0DFAE54BCEF00BBAC0533424F025493F /* FirebaseCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseCore-dummy.m"; sourceTree = "<group>"; };
-		0E70599B5FDF9CE17803995D1F548A02 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		0E70599B5FDF9CE17803995D1F548A02 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_common.c; sourceTree = "<group>"; };
 		0F61C0658291D5AA8E05180B31B71529 /* syr.core-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "syr.core-prefix.pch"; sourceTree = "<group>"; };
 		101EB040461AED47B3639E291EF52896 /* FirebaseCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FirebaseCore.modulemap; sourceTree = "<group>"; };
 		10A336ABCD9D2DB25913DFAE04A6091D /* SyrView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrView.m; path = ios/SyrNative/SyrNative/SyrView.m; sourceTree = "<group>"; };
@@ -268,10 +269,8 @@
 		1C18F9553D36ABC7EBF79DC0816B28BC /* ResourceBundle-PYPLCheckout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PYPLCheckout-Info.plist"; sourceTree = "<group>"; };
 		1C38AFEC8681E20944DB2C0AB894CD42 /* FIRLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRLogger.m; path = Firebase/Core/FIRLogger.m; sourceTree = "<group>"; };
 		1C6999CE43C6BBDCBACB066704D50FC1 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
-		1D9451A71D7925ED684AE859D8C7FF87 /* POPPopupBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = POPPopupBridge.m; path = PopupBridge/Classes/POPPopupBridge.m; sourceTree = "<group>"; };
 		1DC5F62FF7AC1E85079501717E5D27A1 /* SyrAlertDialogue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrAlertDialogue.h; path = ios/SyrNative/SyrNative/SyrAlertDialogue.h; sourceTree = "<group>"; };
-		1E1415EC81B982815391E33F86530AC1 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
-		1E8C8EA06AB2030DB082E407C1ED36A8 /* PopupBridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PopupBridge.modulemap; sourceTree = "<group>"; };
+		1E1415EC81B982815391E33F86530AC1 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_encode.c; sourceTree = "<group>"; };
 		284BE9410AE272B54BE9FE0CA491A8B2 /* SyrBundleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrBundleManager.h; path = ios/SyrNative/SyrNative/SyrBundleManager.h; sourceTree = "<group>"; };
 		29113677A9CBA2C4446D1D1645429F32 /* FIRMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMutableDictionary.m; path = Firebase/Core/FIRMutableDictionary.m; sourceTree = "<group>"; };
 		2918301D95D9E5E8397565490226C0C8 /* Pods-SDKtester-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDKtester-dummy.m"; sourceTree = "<group>"; };
@@ -279,7 +278,7 @@
 		2FD0FE18EE1DBDA48957AE85CD8CD387 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		302E2D42CAAC52C79BCD2AB9CCD17478 /* img_fi_usbank_small.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img_fi_usbank_small.png; path = pod/assets/PYPLCheckout/img_fi_usbank_small.imageset/img_fi_usbank_small.png; sourceTree = "<group>"; };
 		3035E3DE8D1565344D247A96D6E95E4B /* icon_chevron_backward_blue.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_chevron_backward_blue.png; path = pod/assets/PYPLCheckout/icon_chevron_backward_blue.imageset/icon_chevron_backward_blue.png; sourceTree = "<group>"; };
-		3042386B8FB1A4F6B10F3E4CA805DD9E /* Pods_SDKtester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SDKtester.framework; path = "Pods-SDKtester.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3042386B8FB1A4F6B10F3E4CA805DD9E /* Pods_SDKtester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDKtester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31AEB5825BCF085FFD425B40E78BC9AF /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
 		320B737C48D72630EC2D4CBAE442F840 /* icon_lock_white.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_lock_white.png; path = pod/assets/PYPLCheckout/icon_lock_white.imageset/icon_lock_white.png; sourceTree = "<group>"; };
 		3233514BC51B7902403BC8FACACC0105 /* icon_handshake_black.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_handshake_black.png; path = pod/assets/PYPLCheckout/icon_handshake_black.imageset/icon_handshake_black.png; sourceTree = "<group>"; };
@@ -294,6 +293,7 @@
 		38FEBD5C21FC433A6609F6AB4A6571A7 /* SyrView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrView.h; path = ios/SyrNative/SyrNative/SyrView.h; sourceTree = "<group>"; };
 		393145382C53CC376AEC0DF9F4FC8F2F /* SyrScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrScrollView.m; path = ios/SyrNative/SyrNative/SyrScrollView.m; sourceTree = "<group>"; };
 		39D0E14C9C81D41E951AFEB67C305D76 /* SyrAnimationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrAnimationDelegate.h; path = ios/SyrNative/SyrNative/SyrAnimationDelegate.h; sourceTree = "<group>"; };
+		3A20685539B2016DF226B5422FE22ACE /* POPWeakScriptMessageDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = POPWeakScriptMessageDelegate.m; path = PopupBridge/Classes/POPWeakScriptMessageDelegate.m; sourceTree = "<group>"; };
 		3B9796C623B9363BD508DC5B1D1BE50D /* SyrNative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrNative.h; path = ios/SyrNative/SyrNative/SyrNative.h; sourceTree = "<group>"; };
 		3D998ACA18EF4DF2604460B243A45E70 /* icon_checkbox_default_grey.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_checkbox_default_grey.png; path = pod/assets/PYPLCheckout/icon_checkbox_default_grey.imageset/icon_checkbox_default_grey.png; sourceTree = "<group>"; };
 		3DACF1F173036C0FEAC6B50F1ACF8D36 /* SyrInfoBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrInfoBox.h; path = ios/SyrNative/SyrNative/SyrInfoBox.h; sourceTree = "<group>"; };
@@ -325,6 +325,7 @@
 		5A2C234C87541BC8531CB22CC6723A70 /* icon_checkbox_checked_blue.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_checkbox_checked_blue.png; path = pod/assets/PYPLCheckout/icon_checkbox_checked_blue.imageset/icon_checkbox_checked_blue.png; sourceTree = "<group>"; };
 		5BBF5C5EF1AACC890C8B5C9E5270062E /* FIRNetworkConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRNetworkConstants.m; path = Firebase/Core/FIRNetworkConstants.m; sourceTree = "<group>"; };
 		5C791114CC27FA630ACE09697C6F0945 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5CFEDC07D339596E5CCD76A284841FEF /* PopupBridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupBridge-prefix.pch"; sourceTree = "<group>"; };
 		5D74B7F9B5E089392D89C3B91FEB9918 /* FIRAnalyticsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAnalyticsConfiguration.h; path = Firebase/Core/Public/FIRAnalyticsConfiguration.h; sourceTree = "<group>"; };
 		5DBAE5A29CC14C5DC9129A7EF44F89FD /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
 		5EA7DC3CB145AA8E8B2F346641F37946 /* SyrBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrBridge.m; path = ios/SyrNative/SyrNative/SyrBridge.m; sourceTree = "<group>"; };
@@ -336,50 +337,51 @@
 		68A9AC0799B901A9E6919056EE765FFC /* SyrNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrNetworking.m; path = ios/SyrNative/SyrNative/SyrNetworking.m; sourceTree = "<group>"; };
 		68E5408298640F4F57C1851163F2E23D /* small_rectangle_fi.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = small_rectangle_fi.png; path = pod/assets/PYPLCheckout/small_rectangle_fi.imageset/small_rectangle_fi.png; sourceTree = "<group>"; };
 		6A7C143C85B803F1D4F042F45D6B7085 /* SyrAnimatedText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrAnimatedText.h; path = ios/SyrNative/SyrNative/SyrAnimatedText.h; sourceTree = "<group>"; };
-		6AF3D0CCCAA15AD79955644BDE9225F9 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		6AF3D0CCCAA15AD79955644BDE9225F9 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
+		6C560A1A98A6B7351AC4F2E8C3F4A703 /* PopupBridge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupBridge.xcconfig; sourceTree = "<group>"; };
 		6CE27C390FDDADC03B806D890960C07F /* libAuthCore.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libAuthCore.a; path = pod/lib/libAuthCore.a; sourceTree = "<group>"; };
-		6D505DB70ED298412C1C30A4D735F53E /* assets */ = {isa = PBXFileReference; includeInIndex = 1; name = assets; path = pod/assets/PYPLCheckout.bundle/assets; sourceTree = "<group>"; };
-		6D89880DABDFF3452613B5C7E554EF67 /* PopupBridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopupBridge-dummy.m"; sourceTree = "<group>"; };
+		6D505DB70ED298412C1C30A4D735F53E /* assets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = assets; path = pod/assets/PYPLCheckout.bundle/assets; sourceTree = "<group>"; };
 		6EA85C014CAD5640B754289E96B31542 /* SyrAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrAnimatedView.m; path = ios/SyrNative/SyrNative/SyrAnimatedView.m; sourceTree = "<group>"; };
 		6F7C147045BC6748A08C504184AD3457 /* spinner_circular_border.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = spinner_circular_border.png; path = pod/assets/PYPLCheckout/spinner_circular_border.imageset/spinner_circular_border.png; sourceTree = "<group>"; };
 		70C2678E93775E346EAA945C9BB6A891 /* SyrBundleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrBundleManager.m; path = ios/SyrNative/SyrNative/SyrBundleManager.m; sourceTree = "<group>"; };
-		710C11993ED8CB401F27966BC2020D4D /* PopupBridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupBridge-prefix.pch"; sourceTree = "<group>"; };
 		7130601581F8CD89F5C1F13C831752E1 /* FIRNetworkURLSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRNetworkURLSession.m; path = Firebase/Core/FIRNetworkURLSession.m; sourceTree = "<group>"; };
-		725ED7A621C68B9186C2147F438B9956 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A35B16CF34AFDEA27FF5F522921EF0 /* img_fi_huntington_small.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img_fi_huntington_small.png; path = pod/assets/PYPLCheckout/img_fi_huntington_small.imageset/img_fi_huntington_small.png; sourceTree = "<group>"; };
-		74D9E1618EC336CBA59F231332C5B648 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirebaseCore.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		736D3916C5A2551E7C4CECD3A2643857 /* POPPopupBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPopupBridge.h; path = PopupBridge/Classes/POPPopupBridge.h; sourceTree = "<group>"; };
+		74D9E1618EC336CBA59F231332C5B648 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75352995A198A1E0245B5BA3B1EC80AA /* PopupBridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PopupBridge.modulemap; sourceTree = "<group>"; };
 		788F9974526E415D6E3358ED1C71826E /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
 		78A7BC9609935D54BC1655E90BE1E053 /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = nanopb.modulemap; sourceTree = "<group>"; };
 		7AB35741D8D737172440E6393F693E3C /* SyrHeightWidthAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrHeightWidthAnimation.h; path = ios/SyrNative/SyrNative/SyrHeightWidthAnimation.h; sourceTree = "<group>"; };
 		7C5DFDA71E066EAA13D82B8833B10BCD /* FirebaseCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FirebaseCore.xcconfig; sourceTree = "<group>"; };
 		7E1A6F782D7C96BC27775FCE03C1F7E7 /* icon_footerlock_grey.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_footerlock_grey.png; path = pod/assets/PYPLCheckout/icon_footerlock_grey.imageset/icon_footerlock_grey.png; sourceTree = "<group>"; };
-		7EE2054682080A656B849AE1E42062BA /* syrBundle.html */ = {isa = PBXFileReference; includeInIndex = 1; name = syrBundle.html; path = pod/assets/PYPLCheckout.bundle/syrBundle.html; sourceTree = "<group>"; };
+		7EE2054682080A656B849AE1E42062BA /* syrBundle.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = syrBundle.html; path = pod/assets/PYPLCheckout.bundle/syrBundle.html; sourceTree = "<group>"; };
 		7F3FB8178C00EECA8B95401E865CC2DA /* SyrOpacityAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrOpacityAnimation.h; path = ios/SyrNative/SyrNative/SyrOpacityAnimation.h; sourceTree = "<group>"; };
 		7FD551B0D32AD920EC12AD4FD8C742C5 /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
+		80FAF461A0321749CCD8B011E70B9A6B /* PopupBridge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupBridge-umbrella.h"; sourceTree = "<group>"; };
 		858C418F03F02D04CFD2332297208B94 /* SyrScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrScrollView.h; path = ios/SyrNative/SyrNative/SyrScrollView.h; sourceTree = "<group>"; };
 		8621664EAF695688F01CA23CABB8C343 /* SyrAnimationDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrAnimationDelegate.m; path = ios/SyrNative/SyrNative/SyrAnimationDelegate.m; sourceTree = "<group>"; };
 		87DA67327658F15BB50205A97588E9F5 /* Pods-SDKtester-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDKtester-frameworks.sh"; sourceTree = "<group>"; };
 		87FD41D02211AAE564F22CE844CFFA44 /* Pods-SDKtester-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDKtester-acknowledgements.plist"; sourceTree = "<group>"; };
 		8898D856700E5146C0DF4FD92496E63A /* SyrTouchableOpacity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrTouchableOpacity.m; path = ios/SyrNative/SyrNative/SyrTouchableOpacity.m; sourceTree = "<group>"; };
-		8941274A6F07A6E863DFB9E51B74DEA5 /* syr_core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = syr_core.framework; path = syr.core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8941274A6F07A6E863DFB9E51B74DEA5 /* syr_core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = syr_core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ACAAD4D3470F811A713F0A2F506FCF4 /* SyrButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrButton.h; path = ios/SyrNative/SyrNative/SyrButton.h; sourceTree = "<group>"; };
 		8B0E75C4FD57E74D6B96D02C683DFD52 /* SyrRaster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrRaster.h; path = ios/SyrNative/SyrNative/SyrRaster.h; sourceTree = "<group>"; };
 		8CA965FCF68C73431B31729D0A4A28B2 /* img_fi_regions_small.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img_fi_regions_small.png; path = pod/assets/PYPLCheckout/img_fi_regions_small.imageset/img_fi_regions_small.png; sourceTree = "<group>"; };
 		8CFE77033D91B384C3DF712BCD4CEAB0 /* FIRBundleUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRBundleUtil.m; path = Firebase/Core/FIRBundleUtil.m; sourceTree = "<group>"; };
 		8F35E433FAA6AF8E8FCC6FA973071757 /* SyrCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrCore.m; path = ios/SyrNative/SyrNative/SyrCore.m; sourceTree = "<group>"; };
 		91E04B18F411BF089F9005A464903410 /* SyrSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrSwitch.m; path = ios/SyrNative/SyrNative/SyrSwitch.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93DDC247592154AD4C58E126BF35BD08 /* SyrNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrNetworking.h; path = ios/SyrNative/SyrNative/SyrNetworking.h; sourceTree = "<group>"; };
 		95116F99097F9FB3CC7A87E32285C26F /* SyrComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrComponent.h; path = ios/SyrNative/SyrNative/SyrComponent.h; sourceTree = "<group>"; };
 		964D7E2C73AF48554F185955A6861F2C /* SyrBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrBridge.h; path = ios/SyrNative/SyrNative/SyrBridge.h; sourceTree = "<group>"; };
 		99EA2CD942733494A9FB42D6B6500A3A /* icon_close_cross_white.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_close_cross_white.png; path = pod/assets/PYPLCheckout/icon_close_cross_white.imageset/icon_close_cross_white.png; sourceTree = "<group>"; };
-		9B5AD24B7BD33CC47CD230105DA8A99A /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B5AD24B7BD33CC47CD230105DA8A99A /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D26F3DF1216B29623E233E324B2626F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E27F481FC519085F1012B630552F8F9 /* FIRAppAssociationRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAppAssociationRegistration.m; path = Firebase/Core/FIRAppAssociationRegistration.m; sourceTree = "<group>"; };
 		9F7E7F543D147807EA6C04F00C201976 /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
 		A03D44EA6BEED6EB764413BA327241DE /* SyrRootView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrRootView.h; path = ios/SyrNative/SyrNative/SyrRootView.h; sourceTree = "<group>"; };
 		A1F037F93F000FF39D19E7A5442C9706 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
-		A2582F0C01DE49F1D5F7A066253C332E /* PopupBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PopupBridge.framework; path = PopupBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2582F0C01DE49F1D5F7A066253C332E /* PopupBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopupBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A302A7EB8DE109F53BDCED9F973A7610 /* Pods-SDKtester-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDKtester-resources.sh"; sourceTree = "<group>"; };
 		A334E4ECCDFAF201DF01FA9B15C0BD1D /* syr.core.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = syr.core.modulemap; sourceTree = "<group>"; };
 		A3888DCEE1F56021D3AFF5DE91560F42 /* SyrAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrAnimatedView.h; path = ios/SyrNative/SyrNative/SyrAnimatedView.h; sourceTree = "<group>"; };
@@ -391,8 +393,9 @@
 		A720FBECB7BF51FFB374928C6B3F4E7B /* SyrHapticHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrHapticHelper.h; path = ios/SyrNative/SyrNative/SyrHapticHelper.h; sourceTree = "<group>"; };
 		A9793DF025DEC19117C033038AB9B9AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A98A924106E6AB4E17E2167DECC9D323 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		AAE297025C154DF23E9C2944E399C2B3 /* PopupBridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopupBridge-dummy.m"; sourceTree = "<group>"; };
 		AB9BC6047C22719EF602A20FD903A829 /* FIRMutableDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMutableDictionary.h; path = Firebase/Core/Private/FIRMutableDictionary.h; sourceTree = "<group>"; };
-		AC477519A99BE119983EA1FF60DDB10A /* PYPLCheckout.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PYPLCheckout.bundle; path = "PayPal.Checkout-PYPLCheckout.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC477519A99BE119983EA1FF60DDB10A /* PYPLCheckout.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PYPLCheckout.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF5760D51F0D28517A75C7B705C4013 /* img_fi_citibank_small.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img_fi_citibank_small.png; path = pod/assets/PYPLCheckout/img_fi_citibank_small.imageset/img_fi_citibank_small.png; sourceTree = "<group>"; };
 		AE48EFDACFC33AA3D00C0AC95EC8BE3E /* icon_chevron_forward_blue.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_chevron_forward_blue.png; path = pod/assets/PYPLCheckout/icon_chevron_forward_blue.imageset/icon_chevron_forward_blue.png; sourceTree = "<group>"; };
 		B05663FEF389539EC965AFE7787E7014 /* genericbank.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = genericbank.png; path = pod/assets/PYPLCheckout/genericbank.imageset/genericbank.png; sourceTree = "<group>"; };
@@ -406,16 +409,14 @@
 		C338644F4E4C29AD87F12FAE4BAC2FD4 /* FIRLoggerLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRLoggerLevel.h; path = Firebase/Core/Public/FIRLoggerLevel.h; sourceTree = "<group>"; };
 		C3C8CCADB65568057DC98A8FA06ADEBC /* SyrStackView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrStackView.m; path = ios/SyrNative/SyrNative/SyrStackView.m; sourceTree = "<group>"; };
 		C56E01B0D7584E478A5BA0F2BB0E881B /* SyrViewHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrViewHandler.h; path = ios/SyrNative/SyrNative/SyrViewHandler.h; sourceTree = "<group>"; };
-		C8432A93BBDE9920C3BE771149C7161D /* POPWeakScriptMessageDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPWeakScriptMessageDelegate.h; path = PopupBridge/Classes/POPWeakScriptMessageDelegate.h; sourceTree = "<group>"; };
 		CB683A5125843A7EEFBC26E378BEB70F /* SyrText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrText.h; path = ios/SyrNative/SyrNative/SyrText.h; sourceTree = "<group>"; };
 		CBD981F05A774DC6F40E6E443AFAA134 /* SyrAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrAnimatedImage.h; path = ios/SyrNative/SyrNative/SyrAnimatedImage.h; sourceTree = "<group>"; };
 		CC6BF6B4C3DE058C4723B93E19AE280B /* SyrAlertDialogue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrAlertDialogue.m; path = ios/SyrNative/SyrNative/SyrAlertDialogue.m; sourceTree = "<group>"; };
 		CC8EF2E9A929B29EC656F65914D29AE6 /* FirebaseCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseCore.h; path = Firebase/Core/Public/FirebaseCore.h; sourceTree = "<group>"; };
-		CD6CDDB489FDC0B7E419F6BCC97E84D6 /* PopupBridge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupBridge.xcconfig; sourceTree = "<group>"; };
 		CE99824F8BC8B83AFC098E6DA8B070F6 /* SyrAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrAnimator.h; path = ios/SyrNative/SyrNative/SyrAnimator.h; sourceTree = "<group>"; };
 		CF91BB6EDCE3F5CF38D6E30D2EFF71E9 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
 		D1C4DBADDB3FCBFC323FF922F22AD868 /* FIRAnalyticsConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAnalyticsConfiguration.m; path = Firebase/Core/FIRAnalyticsConfiguration.m; sourceTree = "<group>"; };
-		D36C91CD766B220C6692F0222239C101 /* checkoutJSIntegration.js */ = {isa = PBXFileReference; includeInIndex = 1; name = checkoutJSIntegration.js; path = pod/assets/PYPLCheckout.bundle/checkoutJSIntegration.js; sourceTree = "<group>"; };
+		D36C91CD766B220C6692F0222239C101 /* checkoutJSIntegration.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = checkoutJSIntegration.js; path = pod/assets/PYPLCheckout.bundle/checkoutJSIntegration.js; sourceTree = "<group>"; };
 		D388B1A84EB7C1FAC87CCD5089902615 /* img_fi_mastercard_small.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img_fi_mastercard_small.png; path = pod/assets/PYPLCheckout/img_fi_mastercard_small.imageset/img_fi_mastercard_small.png; sourceTree = "<group>"; };
 		D477ADBE0D32DE293B0C2D77A85BB359 /* SyrButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrButton.m; path = ios/SyrNative/SyrNative/SyrButton.m; sourceTree = "<group>"; };
 		D4914A6A180EAF5E0B1A7068DD639B27 /* Pods-SDKtester.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SDKtester.modulemap"; sourceTree = "<group>"; };
@@ -436,9 +437,7 @@
 		E25C400310161D88EBC93BC10B739606 /* syr.core.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = syr.core.xcconfig; sourceTree = "<group>"; };
 		E6AAC998A8F3BDCB6F4694326E773E8D /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
 		E792F16966E39F7016C66CAFDB6E1400 /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
-		E848F9CF9EE0A27F638DF0FEC353302D /* POPPopupBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPopupBridge.h; path = PopupBridge/Classes/POPPopupBridge.h; sourceTree = "<group>"; };
 		E8669EB663B9D90B5F0F4051550553F2 /* SyrXYAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrXYAnimation.m; path = ios/SyrNative/SyrNative/SyrXYAnimation.m; sourceTree = "<group>"; };
-		EA1E3BD2FA4782A5C2DC453DB23B27BC /* POPWeakScriptMessageDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = POPWeakScriptMessageDelegate.m; path = PopupBridge/Classes/POPWeakScriptMessageDelegate.m; sourceTree = "<group>"; };
 		ED79BF8B89F266EDC78F88EDA2B0F209 /* syr.core-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "syr.core-umbrella.h"; sourceTree = "<group>"; };
 		ED803B43520B89CC1F1C4DA0416094DE /* icon_profile_phantom_black.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_profile_phantom_black.png; path = pod/assets/PYPLCheckout/icon_profile_phantom_black.imageset/icon_profile_phantom_black.png; sourceTree = "<group>"; };
 		EF8DBA63A83BCACB91E32DAF2CF3DF7B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = ios/SyrNative/SyrNative/Info.plist; sourceTree = "<group>"; };
@@ -447,14 +446,15 @@
 		F1B3B76C69E46935B03D59D1A7576775 /* pp_logo_blue.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pp_logo_blue.png; path = pod/assets/PYPLCheckout/pp_logo_blue.imageset/pp_logo_blue.png; sourceTree = "<group>"; };
 		F32F7E7622D78DF43B3081BBAB2D8154 /* wallet_blue_border.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = wallet_blue_border.png; path = pod/assets/PYPLCheckout/wallet_blue_border.imageset/wallet_blue_border.png; sourceTree = "<group>"; };
 		F3A6DFA41791C0C2C509D6322F4DBBB4 /* FIRApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRApp.m; path = Firebase/Core/FIRApp.m; sourceTree = "<group>"; };
-		F46D4F388BA16EC56F931AEF7858BF7B /* nativexo-manifest.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "nativexo-manifest.json"; path = "pod/assets/PYPLCheckout.bundle/nativexo-manifest.json"; sourceTree = "<group>"; };
+		F46D4F388BA16EC56F931AEF7858BF7B /* nativexo-manifest.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "nativexo-manifest.json"; path = "pod/assets/PYPLCheckout.bundle/nativexo-manifest.json"; sourceTree = "<group>"; };
+		F7181C93743DB7A72DCAC2BC676B0287 /* POPPopUpBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = POPPopUpBridge.m; path = PopupBridge/Classes/POPPopUpBridge.m; sourceTree = "<group>"; };
 		F94204639BCAF1677A8C33A3916D98C6 /* img_fi_visa_small.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img_fi_visa_small.png; path = pod/assets/PYPLCheckout/img_fi_visa_small.imageset/img_fi_visa_small.png; sourceTree = "<group>"; };
-		F963289C254E9611F8241D85F8030EFF /* PopupBridge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupBridge-umbrella.h"; sourceTree = "<group>"; };
 		F9E9D678D9474804FF8A17A69A292300 /* SyrHeightWidthAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrHeightWidthAnimation.m; path = ios/SyrNative/SyrNative/SyrHeightWidthAnimation.m; sourceTree = "<group>"; };
 		FA61236491A7ABCAB01A571650968F09 /* SyrStyler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SyrStyler.h; path = ios/SyrNative/SyrNative/SyrStyler.h; sourceTree = "<group>"; };
 		FA67C1F9665043D10EE4CB8A1703AEB6 /* FIRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfiguration.h; path = Firebase/Core/Public/FIRConfiguration.h; sourceTree = "<group>"; };
 		FAE13EEFF681B93012E238F5494186EC /* icon_profile_phantom_small_white.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_profile_phantom_small_white.png; path = pod/assets/PYPLCheckout/icon_profile_phantom_small_white.imageset/icon_profile_phantom_small_white.png; sourceTree = "<group>"; };
 		FB08DDC476C44952EDF93854E3C7300A /* SyrInfoBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrInfoBox.m; path = ios/SyrNative/SyrNative/SyrInfoBox.m; sourceTree = "<group>"; };
+		FC7BC4CD8748582451CB70DAFF2B300F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDA680EEA5D716592A44E106D881B64A /* FIRNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRNetwork.h; path = Firebase/Core/Private/FIRNetwork.h; sourceTree = "<group>"; };
 		FDC6184BCBADEFFCD6490AD5A9DE3CA3 /* SyrRotationAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SyrRotationAnimation.m; path = ios/SyrNative/SyrNative/SyrRotationAnimation.m; sourceTree = "<group>"; };
 		FE44847134D9F1D5EF61BA4B7BAA1141 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
@@ -539,7 +539,6 @@
 				D4335AA48E1FEA822EBF7C1B0D30E379 /* NSData+zlib */,
 				FD35602085712FF6ACD19B1ADC434438 /* Support Files */,
 			);
-			name = GoogleToolboxForMac;
 			path = GoogleToolboxForMac;
 			sourceTree = "<group>";
 		};
@@ -557,20 +556,18 @@
 				8ADF4A9371370BF6DB953F13C7FDAABB /* encode */,
 				E192BA986AEF94DDEA51604B84E22769 /* Support Files */,
 			);
-			name = nanopb;
 			path = nanopb;
 			sourceTree = "<group>";
 		};
-		256C44C3B08E07C99C19062F9DF7B979 /* PopupBridge */ = {
+		252ACEE73AFB3D43423F721591D31173 /* PopupBridge */ = {
 			isa = PBXGroup;
 			children = (
-				E848F9CF9EE0A27F638DF0FEC353302D /* POPPopupBridge.h */,
-				1D9451A71D7925ED684AE859D8C7FF87 /* POPPopupBridge.m */,
-				C8432A93BBDE9920C3BE771149C7161D /* POPWeakScriptMessageDelegate.h */,
-				EA1E3BD2FA4782A5C2DC453DB23B27BC /* POPWeakScriptMessageDelegate.m */,
-				4CE921F73E72C055E90AFD8ACF74FF5B /* Support Files */,
+				736D3916C5A2551E7C4CECD3A2643857 /* POPPopupBridge.h */,
+				F7181C93743DB7A72DCAC2BC676B0287 /* POPPopUpBridge.m */,
+				0DBD9D8358DBDF1823951E902D62A6CE /* POPWeakScriptMessageDelegate.h */,
+				3A20685539B2016DF226B5422FE22ACE /* POPWeakScriptMessageDelegate.m */,
+				C4C093623F2495286114C72330CB2DD1 /* Support Files */,
 			);
-			name = PopupBridge;
 			path = PopupBridge;
 			sourceTree = "<group>";
 		};
@@ -579,7 +576,6 @@
 			children = (
 				904A3C63AF3121600F020F44F040F62E /* Frameworks */,
 			);
-			name = FirebaseInstanceID;
 			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
@@ -600,7 +596,7 @@
 				16BEC940573C66969C055B9F8711B598 /* GoogleToolboxForMac */,
 				19D34154E7985BB9D9A7237545357632 /* nanopb */,
 				471E4A64287ACBB7A806D1CA07E11AAC /* PayPal.Checkout */,
-				256C44C3B08E07C99C19062F9DF7B979 /* PopupBridge */,
+				252ACEE73AFB3D43423F721591D31173 /* PopupBridge */,
 				685E5AD3227A7713529725C6FBF00130 /* syr.core */,
 			);
 			name = Pods;
@@ -611,7 +607,6 @@
 			children = (
 				DA6F16037A64E181BC159DD788B8FC79 /* Frameworks */,
 			);
-			name = FirebaseAnalytics;
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
@@ -634,22 +629,7 @@
 				C8600AE26419743AABAD8452EBDCA4EA /* Resources */,
 				77BE9A82F40A17BD37D6691F5A991602 /* Support Files */,
 			);
-			name = PayPal.Checkout;
 			path = PayPal.Checkout;
-			sourceTree = "<group>";
-		};
-		4CE921F73E72C055E90AFD8ACF74FF5B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				725ED7A621C68B9186C2147F438B9956 /* Info.plist */,
-				1E8C8EA06AB2030DB082E407C1ED36A8 /* PopupBridge.modulemap */,
-				CD6CDDB489FDC0B7E419F6BCC97E84D6 /* PopupBridge.xcconfig */,
-				6D89880DABDFF3452613B5C7E554EF67 /* PopupBridge-dummy.m */,
-				710C11993ED8CB401F27966BC2020D4D /* PopupBridge-prefix.pch */,
-				F963289C254E9611F8241D85F8030EFF /* PopupBridge-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PopupBridge";
 			sourceTree = "<group>";
 		};
 		53EB57CDE7D5419841A39B602FE8F3ED /* Defines */ = {
@@ -747,7 +727,6 @@
 				E8669EB663B9D90B5F0F4051550553F2 /* SyrXYAnimation.m */,
 				750CFCA75165675787808B1D19717413 /* Support Files */,
 			);
-			name = syr.core;
 			path = syr.core;
 			sourceTree = "<group>";
 		};
@@ -849,7 +828,6 @@
 				671837EB7920E63D33F6E123D36C8754 /* FIRVersion.m */,
 				81EB38773A3BB431E0A9BD74817EBC85 /* Support Files */,
 			);
-			name = FirebaseCore;
 			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
@@ -877,6 +855,20 @@
 				2FD0FE18EE1DBDA48957AE85CD8CD387 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		C4C093623F2495286114C72330CB2DD1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC7BC4CD8748582451CB70DAFF2B300F /* Info.plist */,
+				75352995A198A1E0245B5BA3B1EC80AA /* PopupBridge.modulemap */,
+				6C560A1A98A6B7351AC4F2E8C3F4A703 /* PopupBridge.xcconfig */,
+				AAE297025C154DF23E9C2944E399C2B3 /* PopupBridge-dummy.m */,
+				5CFEDC07D339596E5CCD76A284841FEF /* PopupBridge-prefix.pch */,
+				80FAF461A0321749CCD8B011E70B9A6B /* PopupBridge-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PopupBridge";
 			sourceTree = "<group>";
 		};
 		C8600AE26419743AABAD8452EBDCA4EA /* Resources */ = {
@@ -932,7 +924,6 @@
 			children = (
 				CFC95A93D0D905F0C12D118FED62414E /* CoreOnly */,
 			);
-			name = Firebase;
 			path = Firebase;
 			sourceTree = "<group>";
 		};
@@ -1236,7 +1227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 586DEAEE653021B5004331D1B1263E52 /* Build configuration list for PBXNativeTarget "PopupBridge" */;
 			buildPhases = (
-				4C16E356139B59CAC7F9EB9DD21CB2C4 /* Sources */,
+				67D1F37B156F4357711AB582B6020BA0 /* Sources */,
 				89974CFD2F3568D3B1FA8E813190B1A1 /* Frameworks */,
 				2CC86BF46A0ADF89D13D56F69B93DA34 /* Headers */,
 			);
@@ -1256,7 +1247,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1368,13 +1359,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C16E356139B59CAC7F9EB9DD21CB2C4 /* Sources */ = {
+		67D1F37B156F4357711AB582B6020BA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D85F13C779167622E521C6871A36599 /* POPPopupBridge.m in Sources */,
-				8E5916441A27BA4F2E528A4732DC13EE /* PopupBridge-dummy.m in Sources */,
-				39F09C7F253A1B52800CF5C3ADBEE4B2 /* POPWeakScriptMessageDelegate.m in Sources */,
+				984457DBE0343FF23CD3A02690B2031C /* POPPopUpBridge.m in Sources */,
+				2F973F0366320B54A0270AC503427CD0 /* PopupBridge-dummy.m in Sources */,
+				DCFB2951BE783C494B9AAFCBA204C30A /* POPWeakScriptMessageDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1621,6 +1612,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PayPal.Checkout";
 				INFOPLIST_FILE = "Target Support Files/PayPal.Checkout/ResourceBundle-PYPLCheckout-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
 				PRODUCT_NAME = PYPLCheckout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1729,7 +1721,7 @@
 		};
 		730024FAC367C7D897A3C10B4FAD7855 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD6CDDB489FDC0B7E419F6BCC97E84D6 /* PopupBridge.xcconfig */;
+			baseConfigurationReference = 6C560A1A98A6B7351AC4F2E8C3F4A703 /* PopupBridge.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1823,7 +1815,7 @@
 		};
 		95A23A4C8C156DDE7B578530179F2706 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD6CDDB489FDC0B7E419F6BCC97E84D6 /* PopupBridge.xcconfig */;
+			baseConfigurationReference = 6C560A1A98A6B7351AC4F2E8C3F4A703 /* PopupBridge.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1921,6 +1913,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PayPal.Checkout";
 				INFOPLIST_FILE = "Target Support Files/PayPal.Checkout/ResourceBundle-PYPLCheckout-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
 				PRODUCT_NAME = PYPLCheckout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
