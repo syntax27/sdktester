@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "POPPopupBridge.h"
+#import "POPPopUpBridge.h"
 #import "POPWeakScriptMessageDelegate.h"
 
 FOUNDATION_EXPORT double PopupBridgeVersionNumber;

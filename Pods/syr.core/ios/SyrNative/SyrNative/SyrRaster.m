@@ -17,6 +17,7 @@
 @property UIView* rootView;
 @property NSMutableDictionary* components;
 @property NSMutableDictionary* animations;
+@property NSMutableDictionary* nonRenderables;
 @end
 
 @implementation SyrRaster
@@ -38,6 +39,7 @@
     _components = [[NSMutableDictionary alloc] init];
     _animations = [[NSMutableDictionary alloc] init];
     _nativemodules = [[NSMutableDictionary alloc] init];
+    _nonRenderables = [[NSMutableDictionary alloc] init];
     _registeredClasses = [[NSMutableDictionary alloc] init];;
   }
   return self;
@@ -72,29 +74,37 @@
 
 -(void) syncState: (NSDictionary*) component withViewParent: (UIView*) viewParent {
   NSString* uuid = [[component objectForKey:@"instance"] valueForKey:@"uuid"];
+  
+  // check to see if the uuid is on the ast def and not an instance
+  if(uuid == nil) {
+    uuid = [component valueForKey:@"uuid"];
+  }
 
   NSObject* componentInstance = [_components objectForKey:uuid];
   NSString* className = [_registeredClasses valueForKey:[component valueForKey:@"elementName"]];
   Class class = NSClassFromString(className);
   
   BOOL unmount = (BOOL)[component valueForKey:@"unmount"];
+  
   if(unmount == YES) {
     // if the component is flagged for unmounting remove
     if(componentInstance != nil) {
       UIView* instance = (UIView*) componentInstance;
-      [_components removeObjectForKey:uuid];
+			[_components removeObjectForKey:uuid];
       [instance removeFromSuperview];
       [_bridge rasterRemovedComponent:uuid];
     } else {
     
       NSArray* children = [component objectForKey:@"children"];
-      if(children != nil) {
+      if(children != nil || [children count] != 0) {
         for(id child in children) {
+           if(child != nil && child != [NSNull null]) {
+           
             NSString* childuuid = [[child objectForKey:@"instance"] valueForKey:@"uuid"];
             UIView* childInstance = [_components objectForKey:childuuid];
           	BOOL unmountChildInstance = (BOOL)[component valueForKey:@"unmount"];
             if(unmountChildInstance == YES) {
-              [_components removeObjectForKey:childuuid];
+							[_components removeObjectForKey:childuuid];
               
               SEL selector = NSSelectorFromString(@"addArrangedSubview:");
               if ([viewParent respondsToSelector:selector]) {
@@ -103,16 +113,27 @@
                 [childInstance removeFromSuperview];
               }
               
-              [_bridge rasterRemovedComponent:uuid];
+              [_bridge rasterRemovedComponent:childuuid];
+              
             }
         }
+        }
       }
+      [_bridge rasterRemovedComponent:uuid];
+      [_nonRenderables removeObjectForKey:uuid];
     }
     NSLog(@"unmount");
   } else {
   		// attempt to update instance
       if(componentInstance != nil && class != nil) {
           // we have an instance and a class, lets update this component
+        	if([(UIView*)componentInstance superview]!=nil)
+          	NSLog(@"visible");
+        	else
+            // reattach to view parent
+            [viewParent addSubview:(UIView*)componentInstance];
+          	NSLog(@"not visible");
+        
           viewParent = (UIView*)componentInstance;
           SEL selector = NSSelectorFromString(@"render:withInstance:");
           if ([class respondsToSelector:selector]) {
@@ -125,6 +146,8 @@
             [inv setArgument:&(componentInstance) atIndex:3];
             [inv invoke];
           }
+        
+  
       } else if(componentInstance == nil && class != nil) {
         // we don't have an instance, but a class exists
         // lets create this instance
@@ -156,6 +179,11 @@
         [_bridge rasterRenderedComponent:[[component valueForKey:@"instance"] valueForKey:@"uuid"]];
         viewParent = newComponent;
         NSLog(@"create a new component %@", className);
+      } else {
+        if([_nonRenderables objectForKey:uuid] == nil) {
+          [_bridge rasterRenderedComponent:uuid];
+        	[_nonRenderables setValue:@"" forKey:uuid];
+        }
       }
     
       NSArray* children = [component objectForKey:@"children"];
@@ -170,11 +198,13 @@
         }
     
         for(id child in children) {
-          if(key != nil) {
-            [child setValue:key forKey:@"key"];
-            NSLog(@"add key");
-          }
-          [self syncState:child withViewParent:viewParent];
+         if(child != nil && child != [NSNull null]) {
+            if(key != nil) {
+              [child setValue:key forKey:@"key"];
+              NSLog(@"add key");
+            }
+          	[self syncState:child withViewParent:viewParent];
+        	}
         }
       }
   }
@@ -192,10 +222,14 @@
   } else {
     NSArray* childComponents = [astDict objectForKey:@"children"];
     NSDictionary* childComponent = [childComponents objectAtIndex:0];
-    [self build:childComponent];
+    
+    if(childComponent != nil) {
+      [self build:childComponent];
+    }
+    
+		[_nonRenderables setValue:@"" forKey:[astDict valueForKey:@"uuid"]];
     [_bridge rasterRenderedComponent:[astDict valueForKey:@"uuid"]];
   }
-  
 }
 
 // build children in the tree
@@ -370,6 +404,11 @@
     }
   }
   free(methods);
+}
+
+-(void) reset {
+  _components = [[NSMutableDictionary alloc] init];
+  _animations = [[NSMutableDictionary alloc] init];
 }
 
 -(void) showInfoMessage: (NSDictionary*) message withRootView:(SyrRootView*) rootView {

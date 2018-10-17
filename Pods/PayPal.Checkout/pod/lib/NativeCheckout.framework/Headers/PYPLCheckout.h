@@ -36,5 +36,5 @@ typedef NS_ENUM(int, PYPLEnvironments)
 - (void) setEnvironmentWithKey:(NSString*)key Value:(NSObject*)value;
 - (void) getAccessToken;
 -(void) application:(UIApplication *)application didChangeStatusBarFrame:(CGRect)oldStatusBarFrame;
-
+- (bool) application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler;
 @end
