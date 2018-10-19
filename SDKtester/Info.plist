@@ -51,11 +51,11 @@
 		<true/>
 	</dict>
 	<key>Paypal_Client_Id</key>
-	<string>ASJf2HsVCpARnnaw22DW54iYewtu6Ssd2_XoHAQdRRLmSWkTivH-i6CO6VW8iASJAfdGLSm6K2-nT29G</string>
+	<string>Afqildx0cKbk0QwvlWsDwjqahzRJNABsIVnLFbR1ANqAIB7Hp1pgLHmQBhMNK0zI_oG0G5iTDUyIYgcb</string>
 	<key>Paypal_Universal_Link</key>
-	<string>https://adidas.onelink.me/ihha/</string>
+	<string>https://ppxoab.herokuapp.com/sdktesteruniversal/</string>
 	<key>Paypal_Url_Scheme</key>
-	<string>payPal123://paypal/authorize</string>
+	<string>sdktester</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
