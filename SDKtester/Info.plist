@@ -51,7 +51,7 @@
 		<true/>
 	</dict>
 	<key>Paypal_Client_Id</key>
-	<string>Afqildx0cKbk0QwvlWsDwjqahzRJNABsIVnLFbR1ANqAIB7Hp1pgLHmQBhMNK0zI_oG0G5iTDUyIYgcb</string>
+	<string>Aaec5BCR69YQHpJvk2Mbk-Ny137Iww005Ml0eoXJBs6EY_MY7_zBiLRAIvAW</string>
 	<key>Paypal_Universal_Link</key>
 	<string>https://ppxoab.herokuapp.com/sdktesteruniversal/</string>
 	<key>Paypal_Url_Scheme</key>

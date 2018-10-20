@@ -41,6 +41,7 @@ class NativeXOUIWebViewController: UIViewController {
         } else {
             instance.webBrowserOnlyMode = true
         }
+        instance.serviceEnvironment = PYPLEnvironments.live
         instance.interceptWebView(storeWebView)
         
         storeWebView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true

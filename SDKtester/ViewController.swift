@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // Default values for UI elements
     var selectedSdk = 0
-    var url = "https://ppxoab.herokuapp.com/cart/index.html"
+    var url = "https://ppxoab.herokuapp.com/de_cart_live/index.html"
     
     @IBOutlet weak var sdkSelector: UISegmentedControl!
     @IBOutlet weak var urlToOpen: UITextField!
@@ -55,11 +55,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func loadPagePressed(_ sender: Any) {
         if(sdkSelector.selectedSegmentIndex == 0){
-            if(urlToOpen.text != "https://ppxoab.herokuapp.com/cart/index.html" && nativeSwitch.isOn){
-                let alert = UIAlertController(title: "SDK Tester", message: "The native experience is restricted to the pre-set test environment. \n\n If you want to test another url please disable the native payment sheet.", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
+//            if(urlToOpen.text != "https://ppxoab.herokuapp.com/cart/index.html" && nativeSwitch.isOn){
+//                let alert = UIAlertController(title: "SDK Tester", message: "The native experience is restricted to the pre-set test environment. \n\n If you want to test another url please disable the native payment sheet.", preferredStyle: UIAlertControllerStyle.alert)
+//                alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default, handler: nil))
+//                self.present(alert, animated: true, completion: nil)
+//            }
             performSegue(withIdentifier: "OpenNativeXO", sender: Any?.self)
         } else {
             performSegue(withIdentifier: "OpenPopupBridge", sender: Any?.self)
